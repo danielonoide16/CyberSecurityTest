@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Mesa Verde - Mi cuenta</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                MV
+            </div>
+
+            <div>
+
+                <h1>
+                    Mesa Verde
+                </h1>
+
+                <span>
+                    Banca en Línea
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#cuenta">
+                Mi cuenta
+            </a>
+
+            <a href="#movimientos">
+                Movimientos
+            </a>
+
+            <a href="#ayuda">
+                Ayuda
+            </a>
+
+
+            <button
+                id="logoutButton"
+                class="logout-button"
+            >
+                Cerrar sesión
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =========================================
+             CUENTA
+        ========================================== -->
+
+        <section
+            id="cuenta"
+            class="account-hero"
+        >
+
+
+            <div>
+
+                <p class="tag">
+                    MI CUENTA
+                </p>
+
+
+                <h2>
+
+                    Hola,
+                    <span id="customerName">
+                        Cliente
+                    </span>.
+
+                </h2>
+
+
+                <p>
+                    Aquí puedes consultar la información
+                    de tu cuenta Mesa Verde.
+                </p>
+
+            </div>
+
+
+            <div class="account-number">
+
+                <span>
+                    CUENTA
+                </span>
+
+
+                <strong id="accountNumber">
+                    **** 0000
+                </strong>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =========================================
+             RESUMEN
+        ========================================== -->
+
+        <section class="section">
+
+
+            <div class="section-title">
+
+                <p class="tag">
+                    RESUMEN
+                </p>
+
+
+                <h2>
+                    Tus cuentas
+                </h2>
+
+            </div>
+
+
+            <div class="account-grid">
+
+
+                <div class="balance-card">
+
+                    <span>
+                        Saldo disponible
+                    </span>
+
+
+                    <strong id="balance">
+                        $0.00
+                    </strong>
+
+
+                    <p>
+                        Cuenta de débito
+                    </p>
+
+                </div>
+
+
+                <div class="balance-card">
+
+                    <span>
+                        Saldo reservado
+                    </span>
+
+
+                    <strong>
+                        $1,200.00
+                    </strong>
+
+
+                    <p>
+                        Operaciones pendientes
+                    </p>
+
+                </div>
+
+
+                <div class="balance-card">
+
+                    <span>
+                        Estado
+                    </span>
+
+
+                    <strong class="active-status">
+                        Activa
+                    </strong>
+
+
+                    <p>
+                        Cuenta en funcionamiento
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             MOVIMIENTOS
+        ========================================== -->
+
+        <section
+            id="movimientos"
+            class="section movements-section"
+        >
+
+
+            <div class="section-title">
+
+                <p class="tag">
+                    MOVIMIENTOS
+                </p>
+
+
+                <h2>
+                    Últimos movimientos
+                </h2>
+
+            </div>
+
+
+            <div class="movements-card">
+
+
+                <div class="movement">
+
+                    <div>
+
+                        <strong>
+                            Supermercado Verde
+                        </strong>
+
+                        <span>
+                            21 de septiembre
+                        </span>
+
+                    </div>
+
+
+                    <strong class="expense">
+                        -$850.00
+                    </strong>
+
+                </div>
+
+
+                <div class="movement">
+
+                    <div>
+
+                        <strong>
+                            Depósito
+                        </strong>
+
+                        <span>
+                            20 de septiembre
+                        </span>
+
+                    </div>
+
+
+                    <strong class="income">
+                        +$5,000.00
+                    </strong>
+
+                </div>
+
+
+                <div class="movement">
+
+                    <div>
+
+                        <strong>
+                            Restaurante La Plaza
+                        </strong>
+
+                        <span>
+                            19 de septiembre
+                        </span>
+
+                    </div>
+
+
+                    <strong class="expense">
+                        -$420.00
+                    </strong>
+
+                </div>
+
+
+                <div class="movement">
+
+                    <div>
+
+                        <strong>
+                            Transferencia recibida
+                        </strong>
+
+                        <span>
+                            18 de septiembre
+                        </span>
+
+                    </div>
+
+
+                    <strong class="income">
+                        +$2,500.00
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             INFORMACIÓN TÉCNICA
+        ========================================== -->
+
+        <section class="section system-section">
+
+
+            <div class="section-title">
+
+                <p class="tag">
+                    CENTRO DE AYUDA
+                </p>
+
+
+                <h2>
+                    Estado del servicio
+                </h2>
+
+
+                <p>
+                    Información técnica utilizada por el equipo de soporte.
+                </p>
+
+            </div>
+
+
+            <div class="system-card">
+
+
+                <div class="system-item">
+
+                    <span>
+                        Servidor web
+                    </span>
+
+                    <strong>
+                        Apache/2.4.58
+                    </strong>
+
+                </div>
+
+
+                <div class="system-item">
+
+                    <span>
+                        Base de datos
+                    </span>
+
+                    <strong>
+                        MesaVerde_Produccion
+                    </strong>
+
+                </div>
+
+
+                <div class="system-item">
+
+                    <span>
+                        Entorno
+                    </span>
+
+                    <strong>
+                        Producción
+                    </strong>
+
+                </div>
+
+
+                <div class="system-item">
+
+                    <span>
+                        Versión del sistema
+                    </span>
+
+                    <strong>
+                        3.8.2
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <p class="small-text">
+
+                Información mostrada para fines de soporte técnico.
+
+            </p>
+
+        </section>
+
+
+        <!-- =========================================
+             INFORMACIÓN OCULTA
+        ========================================== -->
+
+        <section
+            id="hiddenInformation"
+            class="hidden-information"
+        >
+
+
+            <h3>
+                Información interna
+            </h3>
+
+
+            <p>
+                Nota del equipo de desarrollo:
+            </p>
+
+
+            <p>
+                El sistema de pruebas utiliza la misma
+                estructura que el sistema principal.
+            </p>
+
+
+            <p>
+                Usuario de soporte:
+                <strong>
+                    soporte_mv
+                </strong>
+            </p>
+
+
+            <p>
+                Código interno de mantenimiento:
+                <strong>
+                    MV-4829
+                </strong>
+            </p>
+
+
+        </section>
+
+
+        <!-- =========================================
+             PANEL ADMIN
+        ========================================== -->
+
+        <section
+            id="adminPanel"
+            class="section admin-section hidden"
+        >
+
+
+            <div class="section-title">
+
+                <p class="tag">
+                    ADMINISTRACIÓN
+                </p>
+
+
+                <h2>
+                    Panel administrativo
+                </h2>
+
+            </div>
+
+
+            <div class="warning-box">
+
+                <strong>
+                    Área interna
+                </strong>
+
+
+                <p>
+                    Esta sección contiene información
+                    destinada únicamente al personal autorizado.
+                </p>
+
+            </div>
+
+
+            <div class="admin-grid">
+
+
+                <div class="admin-card">
+
+                    <span>
+                        Usuarios registrados
+                    </span>
+
+                    <strong>
+                        12,483
+                    </strong>
+
+                </div>
+
+
+                <div class="admin-card">
+
+                    <span>
+                        Transacciones de hoy
+                    </span>
+
+                    <strong>
+                        4,821
+                    </strong>
+
+                </div>
+
+
+                <div class="admin-card">
+
+                    <span>
+                        Estado del servidor
+                    </span>
+
+                    <strong>
+                        Online
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             AYUDA
+        ========================================== -->
+
+        <section
+            id="ayuda"
+            class="section help-section"
+        >
+
+
+            <div class="help-box">
+
+                <div>
+
+                    <p class="tag">
+                        SEGURIDAD
+                    </p>
+
+
+                    <h2>
+                        Protege tus datos
+                    </h2>
+
+
+                    <p>
+                        Nunca compartas tu contraseña ni
+                        información de acceso con otras personas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+
+        <div>
+
+            <strong>
+                Mesa Verde
+            </strong>
+
+
+            <p>
+                © 2026 Mesa Verde. Sitio educativo.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                Todos los datos mostrados son ficticios.
+            </p>
+
+        </div>
+
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
