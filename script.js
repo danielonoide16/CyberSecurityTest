@@ -401,3 +401,97 @@ console.log(
     "Clientes registrados:",
     Object.keys(internalCustomers)
 );
+
+
+// =====================================================
+// RECUPERAR CONTRASEÑA
+// =====================================================
+
+// VULNERABILIDAD:
+// El sistema revela directamente la contraseña del usuario.
+//
+// En un sistema real, una contraseña nunca debería
+// mostrarse de esta manera.
+
+
+const forgotPasswordLink =
+    document.getElementById("forgotPasswordLink");
+
+
+const forgotPasswordBox =
+    document.getElementById("forgotPasswordBox");
+
+
+const forgotPasswordForm =
+    document.getElementById("forgotPasswordForm");
+
+
+const recoveryUsername =
+    document.getElementById("recoveryUsername");
+
+
+const recoveryMessage =
+    document.getElementById("recoveryMessage");
+
+
+if (forgotPasswordLink) {
+
+    forgotPasswordLink.addEventListener(
+        "click",
+        function (event) {
+
+            event.preventDefault();
+
+            forgotPasswordBox.classList.toggle(
+                "hidden"
+            );
+
+        }
+    );
+
+}
+
+
+if (forgotPasswordForm) {
+
+    forgotPasswordForm.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+
+            const username =
+                recoveryUsername.value
+                    .trim()
+                    .toLowerCase();
+
+
+            // El usuario no existe.
+
+            if (!internalCustomers[username]) {
+
+                recoveryMessage.textContent =
+                    `El usuario ${username} no existe.`;
+
+                recoveryMessage.className =
+                    "login-message error";
+
+                return;
+
+            }
+
+
+            // VULNERABILIDAD:
+            // Se revela directamente la contraseña.
+
+            recoveryMessage.textContent =
+                `Tu contraseña es: ${internalCustomers[username].password}`;
+
+            recoveryMessage.className =
+                "login-message";
+
+        }
+    );
+
+}
